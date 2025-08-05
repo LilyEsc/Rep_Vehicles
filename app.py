@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-car_data = pd.read_csv('C:/Users/hp/Documents/ProyectoSprint7/Rep_Vehicles/vehicles_data.csv')
+car_data = pd.read_csv('https://practicum-content.s3.us-west-1.amazonaws.com/new-markets/Data_sprint_4_Refactored/vehicles_us.csv')
 
 st.title('Proyecto Sprint 7. Analisis sobre venta de autos')
 
