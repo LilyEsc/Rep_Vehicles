@@ -26,20 +26,4 @@ if barra_button:
     st.plotly_chart(fig, use_container_width=True)
 
 marcas = ['ford', 'chevrolet', 'toyota', 'nissan', 'hyundai']
-marca_select = st.multiselect('Seleccione una marca:', options=marcas)
-
-"""
-masc = pd.Series([False] * len(car_data))
-for marca in marcas_mostrar:
-    masc = masc | car_data['model'].str.contains(marca, case=False, na=False)
-
-car_marcas = car_data[masc]
-
-st.subheader('Tipos de Carroceria por Fabricante')
-
-
-
-fig = px.line(car_marcas, x=car_marcas['type'])
-#tipo = car_data.groupby('model')['type'].value_counts()
-#st.bar_chart
-"""
+marca_select = st.selectbox('Seleccione una marca:', options=marcas)
